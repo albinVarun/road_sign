@@ -12,10 +12,10 @@ IMG_SIZE = 32
 class RoadSignPredictor:
     def __init__(self):
         # Load the model
-        self.model = tf.keras.models.load_model('/home/stilskin/Python/project/final_upload/road_sign_detection_testcas4.h5')
+        self.model = tf.keras.models.load_model('road_sign_detection_testcas4.h5')
         
         # Load class labels
-        self.labels_df = pd.read_csv('/home/stilskin/Python/project/road_sign/Indian-Traffic Sign-Dataset/traffic_sign.csv')
+        self.labels_df = pd.read_csv('traffic_sign.csv')
     
     def preprocess_image(self, image):
         # Convert PIL Image to numpy array
