@@ -1,4 +1,5 @@
-tensorflow
+pip==24.3.1
+tensorflow==2.18.0
 numpy
-cv2
+cv2==4.0
 pandas
